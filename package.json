@@ -1,0 +1,25 @@
+{
+  "name": "deadlock-protocol",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "contracts",
+    "guardian",
+    "lit-actions",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:guardian\"",
+    "dev:frontend": "npm -w frontend run dev",
+    "dev:guardian": "npm -w guardian run dev",
+    "build": "npm run build:contracts && npm run build:frontend",
+    "build:contracts": "npm -w contracts run build",
+    "build:frontend": "npm -w frontend run build",
+    "test": "npm -w contracts run test",
+    "deploy:contracts": "npm -w contracts run deploy:calibration",
+    "lint": "npm -w frontend run lint"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

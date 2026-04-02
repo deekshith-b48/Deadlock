@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="58" fill="#0a0a0f" stroke="#7c3aed" stroke-width="2"/>
+
+  <!-- Lock body -->
+  <rect x="30" y="55" width="60" height="45" rx="8" fill="#7c3aed" opacity="0.9"/>
+
+  <!-- Lock shackle (skull-shaped arc) -->
+  <path d="M 42 55 L 42 38 Q 42 22 60 22 Q 78 22 78 38 L 78 55"
+        fill="none" stroke="#7c3aed" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Skull face on lock body -->
+  <!-- Skull outline -->
+  <ellipse cx="60" cy="71" rx="14" ry="13" fill="#0a0a0f"/>
+  <!-- Eye sockets -->
+  <ellipse cx="54" cy="68" rx="4" ry="4.5" fill="#7c3aed"/>
+  <ellipse cx="66" cy="68" rx="4" ry="4.5" fill="#7c3aed"/>
+  <!-- Nose -->
+  <path d="M 58 74 L 62 74 L 60 77 Z" fill="#7c3aed"/>
+  <!-- Teeth -->
+  <rect x="53" y="79" width="3" height="4" rx="1" fill="#7c3aed"/>
+  <rect x="58" y="79" width="3" height="4" rx="1" fill="#7c3aed"/>
+  <rect x="63" y="79" width="3" height="4" rx="1" fill="#7c3aed"/>
+
+  <!-- Keyhole -->
+  <circle cx="60" cy="84" r="3" fill="#7c3aed"/>
+  <rect x="58.5" y="84" width="3" height="8" rx="1" fill="#7c3aed"/>
+</svg>

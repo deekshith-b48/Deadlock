@@ -1,0 +1,34 @@
+{
+  "name": "deadlock-guardian",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "docker:build": "docker build -t deadlock-guardian .",
+    "docker:run": "docker run --env-file .env deadlock-guardian"
+  },
+  "dependencies": {
+    "@chainsafe/libp2p-gossipsub": "^13.0.0",
+    "@chainsafe/libp2p-noise": "^15.0.0",
+    "@chainsafe/libp2p-yamux": "^6.0.0",
+    "@libp2p/bootstrap": "^10.0.0",
+    "@libp2p/identify": "^2.0.0",
+    "@libp2p/mdns": "^10.0.0",
+    "@libp2p/peer-id": "^4.0.0",
+    "@libp2p/tcp": "^9.0.0",
+    "dotenv": "^16.3.0",
+    "ethers": "^6.9.0",
+    "libp2p": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "nodemon": "^3.0.0",
+    "ts-node": "^10.9.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.3.0"
+  }
+}
